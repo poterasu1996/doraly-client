@@ -16,9 +16,6 @@ export default {
             API.updateProduct(item);
             // console.log('ID', typeof this.$props.product._id)
             console.log('form data', item)
-        },
-        showProd() {
-            console.log(this.product)
         }
     }
 }
@@ -88,5 +85,4 @@ export default {
     > 
       Edit product
     </button>
-    <button @click="showProd()">Show prod</button>
 </template>

@@ -3,12 +3,7 @@ import EditProductForm from './EditProductForm.vue';
 export default {
     name: "EditModal",
     props: ["product"],
-    components: { EditProductForm },
-    methods: {
-      showProd() {
-        console.log(this.product)
-      }
-    }
+    components: { EditProductForm }
 }
 </script>
 
@@ -35,7 +30,6 @@ export default {
         <div class="modal-body">
           <EditProductForm :product="product" />
         </div>
-        <button @click="showProd()">Modal Product</button>
       </div>
     </div>
   </div>
